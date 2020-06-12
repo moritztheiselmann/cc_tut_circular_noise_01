@@ -10,9 +10,7 @@ void setup() {
     
   noiseSeed(24902);    // use the same seed every time => same result every time
   noiseDetail(8, 0.25);  
-}
-
-void draw() {
+  
   background(0);
   
   noFill();  
@@ -54,5 +52,11 @@ void draw() {
     endShape(CLOSE);
   }
   popMatrix();
+  saveFrame("data/line-######.png");
+  exit();
+}
+
+void draw() {
+  
   
 }
